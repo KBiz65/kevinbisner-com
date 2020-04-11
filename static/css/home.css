@@ -1,0 +1,244 @@
+html {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+header {
+    padding-top: 6rem;
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../images/blue-wallpaper-preview-24.jpg);
+    background-size: cover;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .my-name {
+    color: white;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 4.0rem;
+    font-family: Yantramanav, sans-serif;
+    margin-bottom: 5px;
+}
+
+header .my-tagline {
+    margin-top: 5px;
+    color: white;
+    font-size: 1.5rem;
+}
+header img {
+    width: 25rem;
+    height: auto;
+}
+
+.social-summary {
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#273469;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+    height: auto;
+}
+
+.social img {
+    width: 75px;
+    height: auto;
+    padding: 0 2rem;
+}
+
+.summary {
+    width: 70rem;
+    height: auto;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.summary-text {
+    width: 70rem;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.summary-text a {
+    font-weight: bold;
+}
+
+.work {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/blue-wallpaper-preview-1.jpg');
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+.section-head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 3rem;
+}
+
+.work .section-head {
+    color: white;
+}
+
+.work .work-display {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kevinbisner-com {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+.kevinbisner-com img {
+    width: 45%;
+    height: auto;
+}
+
+.kevinbisner-com .kevinbisner-text {
+    width: 45%;
+    height: auto;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.timberfoottech-com {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+.timberfoottech-com img {
+    width: 45%;
+    height: auto;
+}
+
+.timberfoottech-com .timberfoot-text {
+    width: 45%;
+    height: auto;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    color: #273469;
+}
+
+.contact .section-head {
+    color: #273469;
+}
+
+.contact-display {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-text {
+    width: 70rem;
+    height: auto;
+}
+
+.contact-text h2 {
+    font-size: 2rem;
+}
+
+.contact-text p {
+    font-size: 1.5rem;
+}
+
+form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38rem;
+    color: #273469;
+    font-size: 2rem;s
+    margin-bottom: 2rem;
+}
+
+input {
+    height: 3rem;
+    border-color: transparent;
+    border-bottom: 2px solid #273469;
+    font-size: 2rem;
+}
+
+textarea {
+    width: 25rem;
+    height: 5rem;
+    border-color: #273469;
+    font-size: 2rem;
+}
+
+form .submit {
+    background: #273469;
+    border-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+form .submit:hover {
+    background-color: #3149a5;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href='{% static "css/home.css" %}' type="text/css">
+{% endblock %}
+
+{% block content %}
+<header>
+    <div class="header-content">
+        <h1 class="my-name">KEVIN BISNER</h1> 
+        <p class="my-tagline">Front-end and back-end web developer</p> 
+    </div>
+    <div class="header-image">
+        <img src="../static/images/KBiz.jpg">
+    </div>
+</header>
+
+<div class="social-summary">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/kevin-bisner-2a850622/">
+            <img src="../static/images/linkedin.png" alt="LinkedIn logo"></a>
+        <a href="https://github.com/KBiz65?tab=repositories">
+            <img src="../static/images/github.png" alt="Github logo"></a>
+        <a href="https://twitter.com/KevinBisner">
+            <img src="../static/images/twitter.png" alt="Twitter logo"></a>
+    </div>
+    <div>
+        <p class="summary">Available for remote job opportunities. Contact me
+            with your requests.</p>
+        <p class="summary-text">My name is Kevin Bisner and I want to be
+            your next front-end or back-end web developer. I am self-taught
+            and excited to share with you my expertise. I have about 1 year
+            of experience working on personal projects and look forward to
+            helping you with yours.</p>
+        <p class="summary-text">I prefer to use <a>Python</a> and <a>Django</a>
+            for back-end development because it's possible to do so many
+            things. For front-end I enjoying using <a>HTML</a> and <a>CSS</a>. 
+        <p class="summary-text">My preference is to create new and exciting
+            websites, especially ones that require the use of a database.</p>
+        <a id="work"></a>
+    </div>
+</div>
+
+<div class="work">
+    <h2 class="section-head">~ My Work ~</h2>
+    <div class="work-display">
+        <div class="kevinbisner-com">
+            <img src="../static/images/kevinbisner-com.PNG" alt="screenshot of
+            kevinbisner dot com website">
+            <p class="kevinbisner-text">I wouldn't be a good web developer if I 
+                couldn't build my own website! What's featured on this site is
+                my use of Python and the Django framework to manage my database of
+                blog posts. I can use this to help you create a page to sell your
+                products or for you to create your own blog as well!
+            </p>
+        </div>
+        <div class="timberfoottech-com">
+            <img src="../static/images/kevinbisner-com.PNG" alt="screenshot of
+            timberfoot tech dot com website">
+            <p class="timberfoot-text">Timberfoot is a web development company
+                I cofounded. This website was made with HTML and CSS as there
+                wasn't a need to use a database. This is a great example of 
+                showing how using just HTML and CSS can still create a stunning
+                website that is extremely effective in showcasing your company.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="contact"><a id="contact"></a>
+    <h2 class="section-head">~ Contact Me ~</h2>
+    <div class="contact-display">
+        <div class="contact-text">
+            <h2>Want to get in touch with me?</h2>
+            <p>Use the form below to reach out with any questions, comments,
+                concerns, advice, or anything else you'd like to say. If you
+                are looking to hire me, please go to my company page, 
+                <a href="http://www.timberfoottech.com/getaquote.html">Timberfoot
+                    Software and Web Developers</a>.</p>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="">
+            <input name="name" type="text" class="form-control" 
+            placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" 
+            placeholder="Your Email" required>
+            <br>
+            <textarea name="message" class="form-control" 
+            placeholder="Message" row="4" required></textarea>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </div>
+
+</div>
+<footer>
+      <p>Copyright &copy; 2020 Kevin Bisner. All rights reserved.</p>  
+</footer>
+{% endblock %}

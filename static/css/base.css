@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+    font-family: 'Vollkorn', serif;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-image: url('../images/blue-wallpaper-preview-1.jpg');
+    background-size: cover;
+}
+
+#navcontainer ul {
+    list-style-type: none;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+#navcontainer ul li {
+    display: inline;
+    font-size: 2rem;
+}
+
+#navcontainer ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: white;
+}
+
+#navcontainer ul li a:hover {
+    color: navy;
+    background-color: white;
+}

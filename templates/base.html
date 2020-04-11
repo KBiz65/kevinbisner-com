@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Kevin Bisner - Software Developer</title>
+    <link rel="stylesheet" href='{% static "css/base.css" %}' type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&family=Yantramanav:wght@400;700&display=swap" rel="stylesheet">
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% block content %}
+    Replace Me
+    {% endblock %}
+</body>
+</html>

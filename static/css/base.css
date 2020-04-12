@@ -19,7 +19,7 @@ nav {
 
 #navcontainer ul {
     list-style-type: none;
-    text-align: left;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
@@ -27,6 +27,7 @@ nav {
 #navcontainer ul li {
     display: inline;
     font-size: 2rem;
+    padding: 0 6rem;
 }
 
 #navcontainer ul li a {

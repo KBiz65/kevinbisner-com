@@ -79,17 +79,15 @@
                     Software and Web Developers</a>.</p>
         </div>
         <div class="contact-form">
-            <form id="contact-form" method="post" action="">
-            <input name="name" type="text" class="form-control" 
-            placeholder="Your Name" required>
-            <br>
-            <input name="email" type="email" class="form-control" 
-            placeholder="Your Email" required>
-            <br>
-            <textarea name="message" class="form-control" 
-            placeholder="Message" row="4" required></textarea>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-            </form>
+            <form action="https://formspree.io/xeqlpebe" method="POST">
+                <input type="text" name="name" class="form-control"
+                placeholder="Name" required>
+                <input type="text" name="email" class="form-control"
+                placeholder="Email" required>
+                <textarea name="message" class="form-control"
+                placeholder="Message" row="5" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
         </div>
     </div>
 

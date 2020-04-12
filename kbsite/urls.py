@@ -20,17 +20,13 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.urls import path
 
-from pages.views import home_view, blog_view
-from blog.views import blog_detail_view, blog_create_view, blog_modify_view
+from home.views import home_view
+from blog.views import blog_detail_view
 
 
 urlpatterns = [
-    path('', home_view, name='home'),
+    path('', home_view),
     path('blog/', blog_detail_view),
-    path('blogcreate/', blog_create_view),
-    path('blogmodify/<int:id>/', blog_modify_view),
-    path('/#contact/', contact_view),
-    path('work/', work_view),
     path('admin/', admin.site.urls),
 ]
 

@@ -191,54 +191,51 @@ header img {
     font-size: 1.5rem;
 }
 
+.contact-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70rem;
+    color: #273469;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
 form {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50rem;
+    height: auto;
     border-color: transparent;
 }
 
-.contact-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38rem;
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #273469;
     color: #273469;
-    font-size: 2rem;s
-    margin-bottom: 2rem;
-}
-
-input {
-    height: 3rem;
-    border-color: transparent;
-    border-bottom: 2px solid #273469;
-    font-size: 2rem;
-}
-
-textarea {
-    width: 25rem;
-    height: 5rem;
-    border-color: #273469;
-    font-size: 2rem;
-}
-
-form .submit {
-    background: #273469;
-    border-color: transparent;
-    color: white;
+    font-family: 'Yantramanav', sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    width: 15rem;
     height: 3rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background-color: #273469;
+    color: white;
+    border-radius: 10px;
+    align-self: center;
 }
-
-form .submit:hover {
-    background-color: #3149a5;
-}
-
 footer {
     text-align: center;
 }

@@ -17,15 +17,12 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
-
-from home.views import home_view
-from blog.views import blog_detail_view
+from django.urls import path, include
 
 
 urlpatterns = [
-    path('', home_view),
-    path('blog/', blog_detail_view),
+    path('', include('home.urls')),
+    path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
 ]
 

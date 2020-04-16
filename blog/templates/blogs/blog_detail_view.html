@@ -6,21 +6,26 @@
 
 {% block content %}
 <header>
-    <h1>Subscribe to my blog (put form here to sign up):</h1>
+    <h1>Subscribe option coming soon!</h1>
 </header>
 
 <div class="blog-container">
     <div class="blogs-rendered">
-        {% for id in posts %}
-        <div class="blogs-posted">
-            <p class="blog-title">{{ id.blog_title }}</p>
-            <p class="blog-tagline">Created by: {{ id.blog_user }} on {{ id.blog_date }}</p>
-            <p class="blog-text">{{ id.blog_text }}</p>
+        {% for post in posts %}
+        {% if post.published %}
+        <div class="posted">
+            <p class="title">{{ post.title }}</p>
+            <p class="tagline">Created by: {{ post.author }} on {{ post.created_on }}</p>
+            {% if post.updated_on %}
+            Updated on: {{ post.updated_on }}
+            {% endif %}
+            <p class="text">{{ post.body }}</p>
             <hr />
+            {% endif %}
         </div>
-
         {% endfor %}
     </div>
+
     <div class="twitter-feed">
         <a class="twitter-timeline" data-width="220" data-height="600"
             href="https://twitter.com/KevinBisner?ref_src=twsrc%5Etfw">

@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Blogpost
+from .models import Post
 
 
 def blog_detail_view(request):
-    posts = list(Blogpost.objects.all().order_by('-id'))
+    posts = list(Post.objects.all().order_by('-id'))
     context = {
         'posts': posts
     }

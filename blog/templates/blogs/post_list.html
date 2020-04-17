@@ -1,7 +1,7 @@
 {% extends 'home/base.html' %}
 {% load static %}
 {% block extrahead %}
-<link rel="stylesheet" href='{% static "css/blog_detail.css" %}' type="text/css">
+<link rel="stylesheet" href='{% static "css/post_list.css" %}' type="text/css">
 {% endblock %}
 
 {% block content %}
@@ -13,16 +13,16 @@
     <div class="blogs-rendered">
         {% for post in posts %}
         {% if post.published %}
-        <div class="posted">
+        <div class="posts">
             <p class="title">{{ post.title }}</p>
-            <p class="tagline">Created by: {{ post.author }} on {{ post.created_on }}</p>
-            {% if post.updated_on %}
-            Updated on: {{ post.updated_on }}
+            <p class="tagline">Created by: {{ post.author }} on {{ post.published_on }}</p>
+            {% if post.has_been_updated %}
+            <p class="tagline">Updated by: {{ post.author }} on {{ post.updated_on }}</p>
             {% endif %}
             <p class="text">{{ post.body }}</p>
             <hr />
-            {% endif %}
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 

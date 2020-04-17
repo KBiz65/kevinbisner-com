@@ -29,18 +29,19 @@ header .header-text {
     justify-content: space-around;
     align-items: flex-start;
     background-color: white;
+    border: 5px solid green;
 }
 .blogs-rendered {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 75%;
-    height: auto;
-    
+    height: auto;   
+    border: 5px solid yellow;
 }
 
-.blogs-posted {
+.posts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,6 +49,7 @@ header .header-text {
     width: 100%;
     height: auto;
     background-color: white;
+    border: 2px solid red;
 }
 
 .twitter-feed {
@@ -57,28 +59,28 @@ header .header-text {
     height: auto;
     background-color: white;
 }
-.blog-title {
+.title {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    width: 75%;
+    margin: 1rem 0;
+    width: 100%;
     height: auto; 
     font-family: Volkorn, serif;
     font-size: 3rem;
     color: navy;
 }
 
-.blog-tagline {
+.tagline {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     font-family: Yantramanav, sans-serif;
     font-size: 1.25rem;
+    margin: 0;
 }
 
-.blog-text {
+.text {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -88,7 +90,7 @@ header .header-text {
     font-size: 2rem;
 }
 
-.blogs-posted hr {
+.posted hr {
     border: 1px dashed black;
     width: 50%;  
 }

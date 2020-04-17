@@ -2,10 +2,10 @@ from django.shortcuts import render
 from .models import Post
 
 
-def blog_detail_view(request):
-    posts = list(Post.objects.all().order_by('-id'))
+def post_list(request):
+    posts = list(Post.objects.all().order_by('-published_on'))
     context = {
         'posts': posts
     }
 
-    return render(request, "blogs/blog_detail_view.html", context)
+    return render(request, "blogs/post_list.html", context)

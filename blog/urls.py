@@ -4,5 +4,5 @@ from .views import PostList
 
 
 urlpatterns = [
-    path('', PostList.as_view()),
+    path('', PostList.as_view(), name="posts"),
 ]

@@ -29,7 +29,6 @@ header .header-text {
     justify-content: space-around;
     align-items: flex-start;
     background-color: white;
-    border: 5px solid green;
 }
 .blogs-rendered {
     display: block;
@@ -38,7 +37,6 @@ header .header-text {
     align-items: center;
     width: 75%;
     height: auto;   
-    border: 5px solid yellow;
 }
 
 .posts {
@@ -49,7 +47,6 @@ header .header-text {
     width: 100%;
     height: auto;
     background-color: white;
-    border: 2px solid red;
 }
 
 .twitter-feed {

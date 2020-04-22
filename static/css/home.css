@@ -6,7 +6,6 @@ body {
     overflow-x:hidden;
 }
 
-
 .home-header {
     padding-top: 6rem;
     display: flex;
@@ -19,36 +18,40 @@ body {
 }
 
 .header-contents {
+    width: 100%;    
+    height: auto;
     display: flex;
-    width: 80%;
-    height: auto    ;
-    justify-content: space-evenly;
     align-items: center;  
 }
 
 .header-content {
     width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .my-name {
+    width: 50%;
+    height: auto;
     color: white;
     padding: 1rem;
     border: 3px solid white;
     border-radius: 10px;
     font-size: 4.0rem;
-    font-family: Yantramanav, sans-serif;
+    font-family: 'Yantramanav', sans-serif;
     margin-bottom: 5px;
     text-align: center;
 }
 
 .my-tagline {
+    width: 50%;
+    height: auto;
     margin-top: 5px;
     color: white;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .header-image {
@@ -60,8 +63,9 @@ body {
 }
 
 .home-header img {
-    width: 50%;
+    max-width: 50%;
     height: auto;
+    padding: 2rem 0;
 }
 
 .social {

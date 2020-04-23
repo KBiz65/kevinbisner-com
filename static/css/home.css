@@ -7,7 +7,7 @@ body {
 }
 
 .home-header {
-    padding-top: 6rem;
+    padding-top: 5.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
     width: 100%;    
     height: auto;
     display: flex;
-    align-items: center;  
+    align-items: center; 
 }
 
 .header-content {
@@ -39,7 +39,7 @@ body {
     padding: 1rem;
     border: 3px solid white;
     border-radius: 10px;
-    font-size: 4.0rem;
+    font-size: 4.5rem;
     font-family: 'Yantramanav', sans-serif;
     margin-bottom: 5px;
     text-align: center;
@@ -50,7 +50,7 @@ body {
     height: auto;
     margin-top: 5px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
 }
 
@@ -65,7 +65,8 @@ body {
 .home-header img {
     max-width: 50%;
     height: auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
+
 }
 
 .social {
@@ -146,7 +147,7 @@ body {
 }
 
 .work .work-display {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     align-items: center;
@@ -516,7 +517,7 @@ footer {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
     .home-header {
         width: 100%;
@@ -544,7 +545,7 @@ footer {
         padding: 1rem;
         border: 3px solid white;
         border-radius: 10px;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-family: 'Yantramanav', sans-serif;
         margin-bottom: 2px;
     }
@@ -552,7 +553,7 @@ footer {
     .my-tagline {
         margin-top: 3px;
         color: white;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .social {
@@ -586,10 +587,11 @@ footer {
         height: auto;
         align-items: center;
         justify-content: center;
+        font-size: 1.75rem;
     }
 
     .social-text {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         width: 80%;
         height: auto;
     }
@@ -601,7 +603,7 @@ footer {
         align-items: center;
         justify-content: center;
         font-family: 'Yantramanav', sans-serif;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .work {
         width: 100%;
@@ -639,7 +641,7 @@ footer {
 
     .kevinbisner-com .kevinbisner-text {
         padding: 1rem;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -664,7 +666,7 @@ footer {
 
     .timberfoottech-com .timberfoot-text {
         display: flex;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         flex-direction: column;
         align-items: center;
         width: 80%;
@@ -703,7 +705,7 @@ footer {
     }
 
     .contact-text p {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .contact-form {
@@ -735,16 +737,16 @@ footer {
         border-bottom: 1px solid #273469;
         color: #273469;
         font-family: 'Yantramanav', sans-serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .contact-form button {
-        width: 15rem;
-        height: 2rem;
+        width: 20rem;
+        height: 3rem;
         margin-top: 2rem;
         font-family: 'Yantramanav', sans-serif;
-        font-size: 1.25rem;
+        font-size: 2.00rem;
         letter-spacing: 2px;
         background-color: #273469;
         color: white;

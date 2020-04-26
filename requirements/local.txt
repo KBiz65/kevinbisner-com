@@ -1,5 +1,6 @@
 -r base.txt
 
+psycopg2==2.8.5
 autopep8==1.5.1
 bandit==1.6.2
 flake8==3.7.9

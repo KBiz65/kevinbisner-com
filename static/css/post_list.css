@@ -77,7 +77,7 @@ header .header-text {
   margin: 0;
 }
 
-.blogs-rendered .text {
+.blogs-rendered .posts .text {
   display: flex;
   align-items: center;
   justify-content: flex-start;

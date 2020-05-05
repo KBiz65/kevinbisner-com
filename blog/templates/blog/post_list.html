@@ -19,7 +19,7 @@
             {% if post.has_been_updated %}
             <p class="tagline">Updated by: {{ post.author }} on {{ post.updated_on }}</p>
             {% endif %}
-            <p class="text">{{ post.body|linebreaks }}</p>
+            <p class="text">{{ post.body|linebreaksbr }}</p>
             <hr />
         </div>
         {% endif %}

@@ -1,0 +1,64 @@
+html {
+  padding-top: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: "Vollkorn", serif;
+  font-family: "Yantramanav", sans-serif;
+}
+
+body {
+  background-image: url(../images/blue-wallpaper-preview-24.jpg);
+  background-size: cover;
+}
+
+.blog_container {
+  padding-top: 6rem;
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  width: 80%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 0;
+  /* padding: 0 3rem; */
+}
+.post_meta {
+  margin: 0;
+  padding: 0;
+}
+
+.post_title {
+  color: navy;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.post_author {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.post_body {
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: "Yantramanav", sans-serif;
+  padding: 1rem 0;
+}
+
+.return_main a {
+  font-size: 1rem;
+}

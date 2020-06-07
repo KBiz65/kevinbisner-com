@@ -3,12 +3,13 @@ body {
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .home-header {
-  padding-top: 5.5rem;
+  padding: 8rem 0 3rem 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -18,54 +19,48 @@ body {
 }
 
 .header-contents {
-  width: 100%;
-  height: auto;
+  width: 80%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.header-content {
-  width: 50%;
-  height: auto;
+.header-content-name {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.my-name {
-  width: 50%;
-  height: auto;
+.header-name {
+  width: 100%;
   color: white;
-  padding: 1rem;
-  border: 3px solid white;
-  border-radius: 10px;
   font-size: 4.5rem;
   font-family: "Yantramanav", sans-serif;
-  margin-bottom: 5px;
   text-align: center;
 }
 
+.header-content-image {
+  width: 35%;
+}
+
+.header-image {
+  width: 80%;
+  min-width: 20rem;
+  height: auto;
+  border-radius: 10px;
+}
+
 .my-tagline {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-top: 5px;
   color: white;
   font-size: 1.75rem;
   text-align: center;
-}
-
-.header-image {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-header img {
-  max-width: 50%;
-  height: auto;
-  padding: 1rem 0;
 }
 
 .social {
@@ -281,31 +276,28 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .home-header {
+  html,
+  body {
+    margin-top: 0;
+    padding-top: 0;
     width: 100%;
-    height: auto;
+  }
+
+  .home-header {
+    width: 90%;
     justify-content: center;
     align-self: center;
     background-image: url(../images/blue-wallpaper-preview-24.jpg);
     background-size: cover;
   }
 
-  .home-header .header-content {
-    width: 100%;
+  .home-header .header-content-name {
+    width: 80%;
+    text-align: center;
   }
 
-  .home-header .header-image {
+  .home-header .header-content-image {
     display: none;
-  }
-
-  .my-name {
-    color: white;
-    padding: 1rem;
-    border: 3px solid white;
-    border-radius: 10px;
-    font-size: 3rem;
-    font-family: "Yantramanav", sans-serif;
-    margin-bottom: 2px;
   }
 
   .my-tagline {
@@ -323,7 +315,6 @@ footer {
     align-items: center;
     justify-content: center;
     color: #273469;
-    border: 2px solid green;
   }
 
   .social-icons {
@@ -340,7 +331,6 @@ footer {
   }
 
   .social-tagline {
-    margin: 1rem;
     display: flex;
     width: 80%;
     height: auto;
@@ -398,7 +388,6 @@ footer {
   }
 
   .kevinbisner-com .kevinbisner-text {
-    padding: 1rem;
     font-size: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -469,7 +458,7 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     color: #273469;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -481,13 +470,13 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: auto;
     border-color: transparent;
   }
 
   .form-control {
-    width: 100%;
+    width: 90%;
     background: transparent;
     border: none;
     outline: none;

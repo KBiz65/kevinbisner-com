@@ -1,6 +1,6 @@
 html {
-  padding-top: 0;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Vollkorn", serif;
   font-family: "Yantramanav", sans-serif;
@@ -9,10 +9,18 @@ html {
 body {
   background-image: url(../images/blue-wallpaper-preview-24.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
+
 header {
   padding-top: 6rem;
   margin-left: 1rem;
+  align-self: flex-start;
 }
 
 header h2 {
@@ -23,13 +31,14 @@ header h2 {
 }
 
 .blog_container {
+  margin: 0%;
+  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   background-color: white;
   width: 80%;
-  margin: 0 10rem;
 }
 
 .blogs_rendered {
@@ -37,7 +46,7 @@ header h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 80%;
+  width: 75%;
   margin: 0;
   padding: 0 2rem;
   border-right: 1px solid black;
@@ -68,7 +77,7 @@ header h2 {
 }
 
 .post_body {
-  width: 80%;
+  width: 100%;
   font-size: 1.5rem;
   font-family: "Yantramanav", sans-serif;
   padding-top: 1rem;

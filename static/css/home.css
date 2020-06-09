@@ -292,8 +292,7 @@ footer {
   }
 
   .home-header .header-content-name {
-    width: 80%;
-    text-align: center;
+    width: 100%;
   }
 
   .home-header .header-content-image {
@@ -516,26 +515,27 @@ footer {
   .home-header .header-contents {
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .home-header .header-content {
+  .home-header .header-contents .header-content-name {
     width: 100%;
   }
 
-  .home-header .header-image {
-    display: none;
-  }
-
-  .my-name {
+  .home-header .header-contents .header-content-name .header-name {
     color: white;
     padding: 1rem;
-    border: 3px solid white;
-    border-radius: 10px;
     font-size: 5rem;
     font-family: "Yantramanav", sans-serif;
     margin-bottom: 2px;
   }
 
-  .my-tagline {
+  .home-header .header-contents .header-content-image {
+    display: none;
+  }
+
+  .home-header .header-contents .header-content-tagline .my-tagline {
     margin-top: 3px;
     color: white;
     width: 100%;

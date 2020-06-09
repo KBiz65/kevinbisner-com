@@ -513,7 +513,7 @@ footer {
   }
 
   .home-header .header-contents {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;

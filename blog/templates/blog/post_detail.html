@@ -1,32 +1,27 @@
-{% extends 'home/base.html' %}
-{% load static %}
-{% block extrahead %}
-<link rel="stylesheet" href='{% static "css/post_detail.css" %}' type="text/css">
-{% endblock %}
-
-{% block content %}
+{% extends 'home/base.html' %} {% load static %} {% block extrahead %}
+<link
+  rel="stylesheet"
+  href='{% static "css/post_detail.css" %}'
+  type="text/css"
+/>
+{% endblock %} {% block content %}
 
 <div class="blog_container">
-      <article class="post">
-          <header class="post_meta">
-              <h3 class="post_title">{{ post.title }}</h3>
-              <p class="post_author">
-                  Created by: {{ post.author }} on {{ post.published_on }}</p>
-              {% if post.has_been_updated %}
-              <p class="post_author">
-                  Updated by: {{ post.author }} on {{ post.updated_on }}</p>
-              {% endif %}
-          </header>
-          
-          <div class="post_body">
-              {{ post.body|safe|linebreaksbr }}
-          </div>
-            
-          <div class="return_main">
-            <a href="{% url 'blog:post_list' %}">Go back</a>
-          </div>
-      </article>
+  <article class="post">
+    <header class="post_meta">
+      <h3 class="post_title">{{ post.title }}</h3>
+      <p class="post_author">
+        Created by: {{ post.author }} on {{ post.created_on }}
+      </p>
+    </header>
 
+    <div class="post_body">{{ post.body|safe|linebreaksbr }}</div>
+
+    <div class="return_main">
+      <a href="{% url 'blog:post_list' %}">Go back</a>
+    </div>
+  </article>
 </div>
-{% comment %} <h1>{{ post.title }}</h1> {% endcomment %}
-{% endblock %}
+{% comment %}
+<h1>{{ post.title }}</h1>
+{% endcomment %} {% endblock %}

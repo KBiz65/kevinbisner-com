@@ -1,44 +1,47 @@
-{% extends 'home/base.html' %}
-{% load static %}
-{% block extrahead %}
-<link rel="stylesheet" href='{% static "css/post_list.css" %}' type="text/css">
-{% endblock %}
-
-{% block content %}
+{% extends 'home/base.html' %} {% load static %} {% block extrahead %}
+<link
+  rel="stylesheet"
+  href='{% static "css/post_list.css" %}'
+  type="text/css"
+/>
+{% endblock %} {% block content %}
 <header>
-    <h2>Subscribe option coming soon!</h2>
+  <h2>Subscribe option coming soon!</h2>
 </header>
 <div class="blog_container">
-    <main class="blogs_rendered">
-        {% for post in posts %}
-        {% if post.published %}
-        <article class="post">
-            <header class="post_meta">
-                <h3 class="post_title">{{ post.title }}</h3>
-                <p class="post_author">
-                    Created by: {{ post.author }} on {{ post.published_on }}</p>
-                {% if post.has_been_updated %}
-                <p class="post_author">
-                    Updated by: {{ post.author }} on {{ post.updated_on }}</p>
-                {% endif %}
-            </header>
-            
-            <div class="post_body">
-                {{ post.body|safe|linebreaksbr|truncatewords_html:50 }}
-                <a href="{% url 'blog:post_detail' pk=post.id %}">Read More</a>
-            </div>
-            <hr />
-        </article>
-        {% endif %}
-        {% endfor %}
-    </main>
+  <main class="blogs_rendered">
+    {% for post in posts %} {% if post.published %}
+    <article class="post">
+      <header class="post_meta">
+        <h3 class="post_title">{{ post.title }}</h3>
+        <p class="post_author">
+          Created by: {{ post.author }} on {{ post.created_on }}
+        </p>
+      </header>
 
-    <div class="twitter_feed">
-        <a class="twitter-timeline" data-width="220" data-height="600"
-            href="https://twitter.com/KevinBisner?ref_src=twsrc%5Etfw">
-            Tweets by KevinBisner</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+      <div class="post_body">
+        {{ post.body|safe|linebreaksbr|truncatewords_html:50 }}
+        <a href="{% url 'blog:post_detail' pk=post.id %}">Read More</a>
+      </div>
+      <hr />
+    </article>
+    {% endif %} {% endfor %}
+  </main>
 
+  <div class="twitter_feed">
+    <a
+      class="twitter-timeline"
+      data-width="220"
+      data-height="600"
+      href="https://twitter.com/KevinBisner?ref_src=twsrc%5Etfw"
+    >
+      Tweets by KevinBisner</a
+    >
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </div>
 </div>
 {% endblock %}

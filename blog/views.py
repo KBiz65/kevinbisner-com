@@ -3,7 +3,7 @@ from .models import Post
 
 
 class PostList(ListView):
-    queryset = Post.objects.filter(published=True).order_by("-published_on")
+    queryset = Post.objects.filter(published=True).order_by("-created_on")
     context_object_name = "posts"
 
 

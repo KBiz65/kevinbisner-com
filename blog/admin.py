@@ -9,8 +9,8 @@ admin.site.index_title = "Admin | Kevin Bisner"
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ("title", "author", "published", "created_on", "updated_on", "published_on")
-    readonly_fields = ("published_on",)
-    ordering = ("-published_on",)
+    list_display = ("title", "author", "published", "created_on")
+    # readonly_fields = ("published_on",)
+    ordering = ("-created_on",)
     date_hierarchy = "created_on"
     empty_value_display = '-NOT-SET-'
